@@ -104,8 +104,30 @@
 						}
 					]
 				}
+			},
+			{
+				"name": "variable",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "VAR",
+					"value": {
+						"value": "@utcNow()",
+						"type": "Expression"
+					}
+				}
 			}
 		],
+		"variables": {
+			"VAR": {
+				"type": "String"
+			}
+		},
 		"annotations": [],
 		"lastPublishTime": "2024-06-01T06:35:34Z"
 	},
