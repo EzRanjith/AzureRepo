@@ -1,0 +1,19 @@
+{
+	"name": "inputdatatojson",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "bolbstoragelinkservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "outputcont"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

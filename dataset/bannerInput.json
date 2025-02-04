@@ -1,0 +1,93 @@
+{
+	"name": "bannerInput",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "bolbstoragelinkservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "bannerraw",
+				"container": "inputcont"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Company Name",
+				"type": "String"
+			},
+			{
+				"name": "Service Name",
+				"type": "String"
+			},
+			{
+				"name": "PolicyId",
+				"type": "String"
+			},
+			{
+				"name": "Submit Date",
+				"type": "String"
+			},
+			{
+				"name": "Completed Date",
+				"type": "String"
+			},
+			{
+				"name": "TAT Days",
+				"type": "String"
+			},
+			{
+				"name": "Tracking Id",
+				"type": "String"
+			},
+			{
+				"name": "Last Name",
+				"type": "String"
+			},
+			{
+				"name": "First Name",
+				"type": "String"
+			},
+			{
+				"name": "Document Name",
+				"type": "String"
+			},
+			{
+				"name": "status",
+				"type": "String"
+			},
+			{
+				"name": "priority",
+				"type": "String"
+			},
+			{
+				"name": "Reviewer ID",
+				"type": "String"
+			},
+			{
+				"name": "Document Type",
+				"type": "String"
+			},
+			{
+				"name": "Report",
+				"type": "String"
+			},
+			{
+				"name": "Index",
+				"type": "String"
+			},
+			{
+				"name": "Pages",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,20 @@
+{
+	"name": "Outputbanner",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "bolbstoragelinkservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "banneroutput",
+				"container": "inputcont"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

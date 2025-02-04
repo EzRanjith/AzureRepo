@@ -1,0 +1,9 @@
+{
+	"name": "bioadf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7694b279-7efa-40b2-8fcd-37efdac611ff",
+		"tenantId": "e5f0cfce-d804-44f9-8ef7-d7ce7a67e625"
+	}
+}
